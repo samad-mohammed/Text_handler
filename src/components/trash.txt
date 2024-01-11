@@ -1,0 +1,14 @@
+<div className={`form-check d-flex form-switch text-${props.mode==='light'?'dark':'light'} `}>
+          <img src={'light-theme-icon.png'}
+              alt="Logo Image" 
+              width="30px" 
+              height="30px" 
+              onClick={props.toggleMode}
+              style={{ filter: props.mode === 'light' ? 'invert(0%)' : 'invert(100%)' }}
+              className="me-5"
+          />
+
+             
+  {/* <input className="form-check-input" type="checkbox" role="switch" onClick={props.toggleMode} id="flexSwitchCheckDefault"/>
+  <label className="form-check-label" for="flexSwitchCheckDefault">Enable DarkMode</label> */}
+</div>
